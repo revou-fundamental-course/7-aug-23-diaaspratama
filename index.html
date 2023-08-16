@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kalkulator Segitiga</title>
+    <script src="./js/index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <h1>Selamat Datang Di Website Penghitung Bangun Datar</h1>
+            <p>Sebuah Website Yang Berfungsi Untuk Menghitung Nilai Luas Dan Keliling Bangun Datar</p>
+        </div>
+    </header>
+    
+    <main>
+        <div id="luass" class="keterangan">
+            <p class="ket1">LUAS SEGITIGA</p>
+            <img src="assets/Segitiga.png"/>
+            <p>Rumus Luas Segitiga Yaitu : </p>
+            <h3>L = 1/2 x a x t</h3>
+            <p>Dimana : </p>
+            <label>L = Luas</label>
+            <label>a = Alas</label>
+            <label>t = Tinggi</label>
+            <br>
+        </div>
+
+        <section class="input-section">
+            <label for="alas-input">Alas Segitiga</label>
+            <input type="number" id="alas-input" placeholder="0">
+            <label for="tinggi-input">Tinggi Segitiga</label>
+            <input type="number" id="tinggi-input" placeholder="0">
+            <section>
+                <pre id="rumusLuas"></pre>
+                <pre id="hitungLuas"></pre>
+                <pre id="hasilLuas"></pre>
+                <button onclick="hitungLuasSegitiga()">Hitung</button>
+                <button onclick="reset()">Reset</button>
+                <a href="#kelilings"><span>Go To Hitung Keliling</span></a>
+            </section>
+        </section>
+
+        <div id="kelilings" class="keterangan">
+            <p class="ket1">KELILING SEGITIGA</p>
+            <img src="assets/Segitiga.png"/>
+            <p>Rumus Keliling Segitiga Yaitu : </p>
+            <h3>K = S1 + S2 + S3</h3>
+            <p>Dimana : </p>
+            <label>K = Keliling</label>
+            <label>S1 = Sisi A</label>
+            <label>S2 = Sisi B</label>
+            <label>S3 = Sisi C</label>
+            <br>
+        </div>
+
+        <section class="input-section">
+            <label for="sisi1-input">Sisi A</label>
+            <input type="number" id="sisiA-input" placeholder="0">
+            <label for="sisi2-input">Sisi B</label>
+            <input type="number" id="sisiB-input" placeholder="0">
+            <label for="sisi3-input">Sisi C</label>
+            <input type="number" id="sisiC-input" placeholder="0">
+            <section>
+                <pre id="rumusKeliling"></pre>
+                <pre id="hitungKeliling"></pre>
+                <pre id="hasilKeliling"></pre>
+                <button onclick="hitungKelilingSegitiga()">Hitung</button>
+                <button onclick="reset()">Reset</button>
+                <a href="#luass"><span>Go To Hitung Luas</span></a>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <p>&copy;2023 Muhammad Dias Pratama Asikin | All Rights Reserved</p>
+        </footer>
+    </main>
+
+</body>
+</html>
